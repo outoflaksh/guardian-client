@@ -142,3 +142,31 @@ main {
   right: 0;
   box-shadow: -15px 0px 50px -10px rgba(0, 0, 0, 0.8);
 }
+
+@media only screen and (max-width: 800px) {
+  main,
+  .nav-container {
+    flex-direction: column;
+  }
+  .nav-item {
+    display: none;
+  }
+
+  .container {
+    min-height: 60vh;
+  }
+  .alert-card {
+    width: 95%;
+    padding-right: 50px;
+    font-size: 1.2rem;
+  }
+  .map-btn {
+    margin-right: 5px;
+  }
+
+  .burg-btn,
+  .help-btn {
+    width: 95%;
+    font-size: 1.6rem;
+  }
+}
